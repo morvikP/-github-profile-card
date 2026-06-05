@@ -2,9 +2,13 @@
 
 Современное веб-приложение для просмотра GitHub-профилей. Позволяет находить пользователей GitHub по username, просматривать их статистику, анализировать репозитории и переходить в профиль на GitHub.
 
-## Скриншот
+## Скриншоты
 
-![Скриншот приложения](../image.png)
+главная:
+<img width="909" height="790" alt="image" src="https://github.com/user-attachments/assets/38459110-9f4d-41e7-ba3b-c96d4ec905ff" />
+
+в рабочем состоянии:
+<img width="875" height="1048" alt="image" src="https://github.com/user-attachments/assets/0146045b-c437-4640-a6ed-ae039708eb1c" />
 
 ## Стек
 
