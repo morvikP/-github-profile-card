@@ -118,6 +118,18 @@ header h1 {
     font-size: 0.95rem;
 }
 
+/* Profile Link */
+.profile-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    cursor: pointer;
+}
+
+.profile-link:hover .profile-card {
+    border-color: #58a6ff;
+}
+
 /* Profile Card */
 .profile-card {
     background: #161b22;

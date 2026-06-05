@@ -7,7 +7,8 @@ const profileCardEl = document.getElementById('profile-card');
 const reposSectionEl = document.getElementById('repos-section');
 const reposListEl = document.getElementById('repos-list');
 
-// Profile fields
+// Profile link and fields
+const profileLinkEl = document.getElementById('profile-link');
 const avatarEl = document.getElementById('avatar');
 const nameEl = document.getElementById('name');
 const loginEl = document.getElementById('login');
@@ -104,12 +105,15 @@ async function handleSearch() {
 function displayProfile(data) {
     avatarEl.src = data.avatar_url || '';
     avatarEl.alt = `${data.login}'s avatar`;
-    nameEl.textContent = data.name || '—';
+    nameEl.textContent = data.name || data.login;
     loginEl.textContent = `@${data.login}`;
     bioEl.textContent = data.bio || 'Нет описания';
     publicReposEl.textContent = data.public_repos ?? 0;
     followersEl.textContent = data.followers ?? 0;
     followingEl.textContent = data.following ?? 0;
+
+    // Set link to GitHub profile
+    profileLinkEl.href = data.html_url;
 
     profileCardEl.classList.remove('hidden');
 }

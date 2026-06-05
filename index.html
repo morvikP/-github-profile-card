@@ -25,30 +25,32 @@
 
         <div id="error-message" class="error-message hidden"></div>
 
-        <div id="profile-card" class="profile-card hidden">
-            <div class="profile-header">
-                <img id="avatar" src="" alt="Avatar" class="avatar">
-                <div class="profile-info">
-                    <h2 id="name">—</h2>
-                    <p id="login" class="login">—</p>
-                    <p id="bio" class="bio">—</p>
+        <a id="profile-link" href="#" target="_blank" class="profile-link">
+            <div id="profile-card" class="profile-card hidden">
+                <div class="profile-header">
+                    <img id="avatar" src="" alt="Avatar" class="avatar">
+                    <div class="profile-info">
+                        <h2 id="name">—</h2>
+                        <p id="login" class="login">—</p>
+                        <p id="bio" class="bio">—</p>
+                    </div>
+                </div>
+                <div class="stats">
+                    <div class="stat">
+                        <span class="stat-value" id="public-repos">0</span>
+                        <span class="stat-label">Репозитории</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-value" id="followers">0</span>
+                        <span class="stat-label">Подписчики</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-value" id="following">0</span>
+                        <span class="stat-label">Подписки</span>
+                    </div>
                 </div>
             </div>
-            <div class="stats">
-                <div class="stat">
-                    <span class="stat-value" id="public-repos">0</span>
-                    <span class="stat-label">Репозитории</span>
-                </div>
-                <div class="stat">
-                    <span class="stat-value" id="followers">0</span>
-                    <span class="stat-label">Подписчики</span>
-                </div>
-                <div class="stat">
-                    <span class="stat-value" id="following">0</span>
-                    <span class="stat-label">Подписки</span>
-                </div>
-            </div>
-        </div>
+        </a>
 
         <div id="repos-section" class="repos-section hidden">
             <h3>Последние репозитории</h3>
