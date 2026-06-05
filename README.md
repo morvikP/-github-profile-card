@@ -5,6 +5,7 @@
 ## Скриншоты
 
 главная:
+
 <img width="909" height="790" alt="image" src="https://github.com/user-attachments/assets/38459110-9f4d-41e7-ba3b-c96d4ec905ff" />
 
 в рабочем состоянии:
