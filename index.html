@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub Profile Card</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>GitHub Profile Card</h1>
+            <p class="subtitle">Введите GitHub-юзернейм, чтобы получить карточку профиля</p>
+        </header>
+
+        <div class="search-section">
+            <input type="text" id="username-input" placeholder="Введите GitHub-юзернейм..." autocomplete="off">
+            <button id="search-btn">Найти</button>
+        </div>
+
+        <div id="loading" class="loading hidden">
+            <div class="spinner"></div>
+            <span>Загружаю...</span>
+        </div>
+
+        <div id="error-message" class="error-message hidden"></div>
+
+        <div id="profile-card" class="profile-card hidden">
+            <div class="profile-header">
+                <img id="avatar" src="" alt="Avatar" class="avatar">
+                <div class="profile-info">
+                    <h2 id="name">—</h2>
+                    <p id="login" class="login">—</p>
+                    <p id="bio" class="bio">—</p>
+                </div>
+            </div>
+            <div class="stats">
+                <div class="stat">
+                    <span class="stat-value" id="public-repos">0</span>
+                    <span class="stat-label">Репозитории</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-value" id="followers">0</span>
+                    <span class="stat-label">Подписчики</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-value" id="following">0</span>
+                    <span class="stat-label">Подписки</span>
+                </div>
+            </div>
+        </div>
+
+        <div id="repos-section" class="repos-section hidden">
+            <h3>Последние репозитории</h3>
+            <div id="repos-list" class="repos-list"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
